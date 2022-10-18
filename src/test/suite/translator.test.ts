@@ -9,5 +9,12 @@ suite('Extension Test Suite', () => {
         const expectedResult: String = 'background-color: red';
 		assert.strictEqual(expectedResult, result);
 	});
+
+    test('remove semicolons', () => {
+        const input: String = `backgroundColor: 'red'`;
+        const result: String = Translator.translate(input);
+        const expectedResult: String = 'background-color: red';
+		assert.strictEqual(expectedResult, result);
+	});
     
 });
