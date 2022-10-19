@@ -6,14 +6,14 @@ export class Translator {
 
    private static mayusToDashMinus = (input: String): String => {
         return input.replace(/[A-Z]/g, (m) => `-${String.fromCharCode(m.charCodeAt(0) + 32)}`);
-    }
+    };
 
     private static removeApostrophes = (input: String): String => {
         return input.replace(/'/g,'');
-    }
+    };
 
     private static commaToSemicolon = (input: String): String => {
         return input.replace(/,/g,';');
-    }
+    };
 
 }
